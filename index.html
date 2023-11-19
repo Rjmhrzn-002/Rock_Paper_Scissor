@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="./game.css" />
+    <script
+      src="https://kit.fontawesome.com/9a32e4ec84.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="game-container active">
+      <div class="blur"></div>
+      <div id="winner-card" class="hidden">
+        <p><span id="player-result"></span></p>
+        <p><span id="comp-result"></span></p>
+        <p><span id="game-result"></span></p>
+        <button id="play-again" onclick="resetGame()">
+          Play again<i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+      <div id="computer-choice">
+        <h2>Computer :</h2>
+        <div class="btn-container">
+          <button class="btn">Rock<img src="./rock.svg" /></button>
+          <button class="btn">Paper<img src="./paper.svg" /></button>
+          <button class="btn">Scissor<img src="./scissor.svg" /></button>
+        </div>
+      </div>
+
+      <div id="player-choice">
+        <h2>You :</h2>
+        <div class="btn-container">
+          <button class="btn" id="Rock">
+            <img id="invert_img" src="./rock.svg" />Rock
+          </button>
+          <button class="btn" id="Paper">
+            <img id="invert_img" src="./paper.svg" />Paper
+          </button>
+          <button class="btn" id="Scissor">
+            <img id="invert_img" src="./scissor.svg" />Scissor
+          </button>
+        </div>
+      </div>
+      <button id="play" onclick="play()">PLAY</button>
+    </div>
+    <script src="./new-sample.js"></script>
+    <!-- <script src="./game.js"></script> -->
+  </body>
+</html>
